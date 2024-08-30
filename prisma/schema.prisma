@@ -1,0 +1,42 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+}
+
+model PetsoftUser {
+  id        String       @id @default(cuid())
+  email     String       @unique
+  password  String
+  hasAccess Boolean      @default(false)
+  pets      PetsoftPet[]
+  updatedAt DateTime     @updatedAt
+  createdAt DateTime     @default(now())
+
+  @@map("petsoft_users")
+}
+
+model PetsoftPet {
+  id        String      @id @default(cuid())
+  name      String
+  ownerName String
+  imageUrl  String
+  age       Int
+  notes     String
+  user      PetsoftUser @relation(fields: [userId], references: [id])
+  userId    String
+  updatedAt DateTime    @updatedAt
+  createdAt DateTime    @default(now())
+
+  @@map("petsoft_pets")
+}
