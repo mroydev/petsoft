@@ -1,104 +1,54 @@
 {
   "node": {
-    "312a4cd74b9697a6de06f6b68a2fc0d6247e06e6": {
+    "7a1bfa3cfc66b4615546565fea3c738552c9d6ff": {
       "workers": {
-        "app/(root)/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!"
+        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22E%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22signOutUser%22%2C%22signInWithOAuth%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/(root)/dashboard/page": "action-browser",
-        "app/(root)/account/page": "action-browser"
-      }
-    },
-    "dec9b8565e31fe7a01b4c1494525f2aa52153645": {
-      "workers": {
-        "app/(root)/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(root)/dashboard/page": "action-browser",
-        "app/(root)/account/page": "action-browser"
-      }
-    },
-    "e58fdd85150ae0f98636a8db3037c1853a7c0a46": {
-      "workers": {
-        "app/(root)/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(root)/dashboard/page": "action-browser",
-        "app/(root)/account/page": "action-browser"
-      }
-    },
-    "19f678bea1f4cd2e6018d32629365f0768697bd9": {
-      "workers": {
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/(root)/account/page": "action-browser",
         "app/(auth)/sign-in/[[...sign-in]]/page": "action-browser"
       }
     },
-    "56e0aed3f112942bbb0e83f1e23df387b5b17d7c": {
+    "80e353873d3472e8f91490f2bc453b0c1087c6d5": {
       "workers": {
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22E%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22signOutUser%22%2C%22signInWithOAuth%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/(root)/account/page": "action-browser",
         "app/(auth)/sign-in/[[...sign-in]]/page": "action-browser"
       }
     },
-    "5a1ec53ddebf26114c3c5be9b0e2dfffbf7addac": {
+    "970f483f850d0b97fb4873f897103ee84d56cb60": {
       "workers": {
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22E%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22signOutUser%22%2C%22signInWithOAuth%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/(root)/account/page": "action-browser",
         "app/(auth)/sign-in/[[...sign-in]]/page": "action-browser"
       }
     },
-    "792908a16bba0d16fb7492fe1daa24134fa8d19a": {
+    "c43236998df04b5b60a7095ccaccbfda2f992e4f": {
       "workers": {
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22E%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22signOutUser%22%2C%22signInWithOAuth%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/(root)/account/page": "action-browser",
         "app/(auth)/sign-in/[[...sign-in]]/page": "action-browser"
       }
     },
-    "c6fb2562c1743a367af0367f73bd27945a6140cf": {
+    "d0d0d06c224dfb1087803a41b96c5b16a541f2ac": {
       "workers": {
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22E%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22signOutUser%22%2C%22signInWithOAuth%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/(root)/account/page": "action-browser",
         "app/(auth)/sign-in/[[...sign-in]]/page": "action-browser"
       }
     },
-    "c9259e6e7e99a7be084dda45cdceccc20e1fd7c6": {
+    "d4ba4c2bfd872b998dbce3551c66379779f1ea6e": {
       "workers": {
-        "app/(root)/account/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%2C%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cpet.actions.ts%22%2C%5B%22deletePet%22%2C%22addPet%22%2C%22editPet%22%5D%5D%5D&__client_imported__=true!",
-        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithOAuth%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22signOutUser%22%2C%22%24%24ACTION_1%22%5D%5D%5D&__client_imported__=true!"
+        "app/(auth)/sign-in/[[...sign-in]]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22E%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cuser.actions.ts%22%2C%5B%22signUpWithCredentials%22%2C%22signInWithCredentials%22%2C%22%24%24ACTION_0%22%2C%22%24%24ACTION_1%22%2C%22signOutUser%22%2C%22signInWithOAuth%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/(root)/account/page": "action-browser",
         "app/(auth)/sign-in/[[...sign-in]]/page": "action-browser"
-      }
-    },
-    "32b0a878452dd1f8c11ecd1ebd85c9ad20ec9d7d": {
-      "workers": {
-        "app/payment/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22H%3A%5C%5Cnextjs%5C%5Cnext%20project%5C%5CWesley%5C%5Cpetsoft%5C%5Csrc%5C%5Cactions%5C%5Cstripe.actions.ts%22%2C%5B%22createCheckoutSession%22%5D%5D%5D&__client_imported__=true!"
-      },
-      "layer": {
-        "app/payment/page": "action-browser"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "tSfWHikMV7xqsfLB5vaVjhGwXMj1QxHOnb81AQbNBWE="
+  "encryptionKey": "mB7Ap9iy35duQZXnItmaKpeMuxm3OqaA0EFF9LMbxNk="
 }
