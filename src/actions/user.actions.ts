@@ -31,7 +31,7 @@ export async function signInWithCredentials(formData: FormData) {
     return { error: 'Invalid credentials' };
   }
 
-  const user = await prisma.petsoftUser.findUnique({
+  const user = await prisma.user.findUnique({
     where: { email: userData.email },
   });
 
@@ -68,7 +68,7 @@ export const signUpWithCredentials = async (formData: FormData) => {
     return { error: validation.error.format() };
   }
 
-  const existingUser = await prisma.petsoftUser.findUnique({
+  const existingUser = await prisma.user.findUnique({
     where: { email },
   });
   if (existingUser) {
@@ -76,7 +76,7 @@ export const signUpWithCredentials = async (formData: FormData) => {
   }
 
   const hashedPassword = await bcrypt.hash(password, 10);
-  const newUser = await prisma.petsoftUser.create({
+  const newUser = await prisma.user.create({
     data: {
       email,
       password: hashedPassword,

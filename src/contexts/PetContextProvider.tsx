@@ -2,7 +2,7 @@
 
 import { addPet, deletePet, editPet } from '@/actions/pet.actions';
 import { PetEssentials } from '@/lib/types';
-import { PetsoftPet } from '@prisma/client';
+import { Pet } from '@prisma/client';
 import React, {
   createContext,
   useContext,
@@ -12,22 +12,19 @@ import React, {
 import { toast } from 'sonner';
 
 type PetContextProviderProps = {
-  data: PetsoftPet[];
+  data: Pet[];
   children: React.ReactNode;
 };
 
 type TPetContext = {
-  pets: PetsoftPet[];
-  selectedPetId: PetsoftPet['id'] | null;
-  selectedPet: PetsoftPet | undefined;
+  pets: Pet[];
+  selectedPetId: Pet['id'] | null;
+  selectedPet: Pet | undefined;
   numberOfPets: number;
   handleAddPet: (newPet: PetEssentials) => Promise<void>;
-  handleEditPet: (
-    petId: PetsoftPet['id'],
-    newPetData: PetEssentials
-  ) => Promise<void>;
-  handleDeletePet: (id: PetsoftPet['id']) => Promise<void>;
-  handleChangeSelectedPetId: (id: PetsoftPet['id']) => void;
+  handleEditPet: (petId: Pet['id'], newPetData: PetEssentials) => Promise<void>;
+  handleDeletePet: (id: Pet['id']) => Promise<void>;
+  handleChangeSelectedPetId: (id: Pet['id']) => void;
 };
 
 export const PetContext = createContext<TPetContext | null>(null);
@@ -78,10 +75,7 @@ export default function PetContextProvider({
     }
   };
 
-  const handleEditPet = async (
-    petId: PetsoftPet['id'],
-    newPetData: PetEssentials
-  ) => {
+  const handleEditPet = async (petId: Pet['id'], newPetData: PetEssentials) => {
     setOptimisticPets({ action: 'edit', payload: { id: petId, newPetData } });
 
     try {
@@ -95,7 +89,7 @@ export default function PetContextProvider({
       toast.warning(error?.message);
     }
   };
-  const handleDeletePet = async (petId: PetsoftPet['id']) => {
+  const handleDeletePet = async (petId: Pet['id']) => {
     setOptimisticPets({ action: 'delete', payload: petId });
     try {
       const petDeleted = await deletePet(petId);
@@ -109,7 +103,7 @@ export default function PetContextProvider({
     }
     setSelectedPetId(null);
   };
-  const handleChangeSelectedPetId = (id: PetsoftPet['id']) => {
+  const handleChangeSelectedPetId = (id: Pet['id']) => {
     setSelectedPetId(id);
   };
 

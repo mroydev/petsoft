@@ -18,7 +18,7 @@ export async function addPet(pet: z.infer<typeof petFormSchema>) {
   }
 
   try {
-    const newPet = await prisma.petsoftPet.create({
+    const newPet = await prisma.pet.create({
       data: {
         ...validatedPet.data,
         user: {
@@ -56,7 +56,7 @@ export async function editPet(petId: unknown, newPetData: unknown) {
   }
 
   // authorization check
-  const pet = await prisma.petsoftPet.findUnique({
+  const pet = await prisma.pet.findUnique({
     where: {
       id: validatedPetId.data,
     },
@@ -76,7 +76,7 @@ export async function editPet(petId: unknown, newPetData: unknown) {
   // database mutation
 
   try {
-    await prisma.petsoftPet.update({
+    await prisma.pet.update({
       where: {
         id: validatedPetId.data,
       },
@@ -107,7 +107,7 @@ export async function deletePet(petId: unknown) {
     };
   }
   // authorization check
-  const pet = await prisma.petsoftPet.findUnique({
+  const pet = await prisma.pet.findUnique({
     where: {
       id: validatedPetId.data,
     },
@@ -126,7 +126,7 @@ export async function deletePet(petId: unknown) {
 
   // database mutation
   try {
-    await prisma.petsoftPet.delete({
+    await prisma.pet.delete({
       where: {
         id: validatedPetId.data,
       },

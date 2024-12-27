@@ -26,7 +26,7 @@ export async function POST(Request: Request) {
   // fulfill order
   switch (event.type) {
     case 'checkout.session.completed':
-      await prisma.petsoftUser.update({
+      await prisma.user.update({
         where: {
           email: event.data.object.customer_email!,
         },

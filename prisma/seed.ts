@@ -3,7 +3,7 @@ import { Prisma, PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-const userData: Prisma.PetsoftUserCreateInput = {
+const userData: Prisma.UserCreateInput = {
   email: 'prisma@gmail.com',
   password: 'Prisma1#',
   pets: {
@@ -44,7 +44,7 @@ async function main() {
 
   userData.password = hashedPassword;
 
-  await prisma.petsoftUser.create({
+  await prisma.user.create({
     data: userData,
   });
 

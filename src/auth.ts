@@ -37,7 +37,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
         }
 
         // find the user in the database
-        const user = await prisma.petsoftUser.findUnique({
+        const user = await prisma.user.findUnique({
           where: {
             email: email as string,
           },
@@ -78,7 +78,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
       if (trigger === 'update') {
         // on every request/update
-        const userFromDb = await prisma.petsoftUser.findUnique({
+        const userFromDb = await prisma.user.findUnique({
           where: {
             email: token.email as string,
           },

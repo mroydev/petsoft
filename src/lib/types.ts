@@ -1,6 +1,6 @@
-import { PetsoftPet } from '@prisma/client';
+import { Pet } from '@prisma/client';
 
 export type PetEssentials = Omit<
-  PetsoftPet,
+  Pet,
   'id' | 'createdAt' | 'updatedAt' | 'userId'
 >;

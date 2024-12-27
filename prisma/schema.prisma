@@ -14,29 +14,29 @@ datasource db {
   directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
 }
 
-model PetsoftUser {
-  id        String       @id @default(cuid())
-  email     String       @unique
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
   password  String
-  hasAccess Boolean      @default(false)
-  pets      PetsoftPet[]
-  updatedAt DateTime     @updatedAt
-  createdAt DateTime     @default(now())
+  hasAccess Boolean  @default(false)
+  pets      Pet[]
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
 
-  @@map("petsoft_users")
+  @@map("users")
 }
 
-model PetsoftPet {
-  id        String      @id @default(cuid())
+model Pet {
+  id        String   @id @default(cuid())
   name      String
   ownerName String
   imageUrl  String
   age       Int
   notes     String
-  user      PetsoftUser @relation(fields: [userId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
   userId    String
-  updatedAt DateTime    @updatedAt
-  createdAt DateTime    @default(now())
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
 
-  @@map("petsoft_pets")
+  @@map("pets")
 }
